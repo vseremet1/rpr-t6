@@ -16,8 +16,8 @@ import java.util.ResourceBundle;
 public class Controller {
 
     ObservableList<String>  Odsjek = FXCollections.observableArrayList("AE","RI","EE","TK");
-    ObservableList<String> Godina = FXCollections.observableArrayList("I","II","III","IV","V");
-    ObservableList<String>  Ciklus = FXCollections.observableArrayList("Prvi","Drugi","Treći");
+    ObservableList<String> Godina = FXCollections.observableArrayList("Prva","Druga","Treća");
+    ObservableList<String>  Ciklus = FXCollections.observableArrayList("Bachelor","Master","Doktorski studij","Stručni studij");
     ObservableList<String> Status = FXCollections.observableArrayList("Redovan","Samofinansirajući");
     ObservableList<String> Borci =  FXCollections.observableArrayList("DA","NE");
 
