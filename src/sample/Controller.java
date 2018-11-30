@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -57,50 +58,37 @@ public class Controller {
     int brojIndeksa,JMBG;
 
 
-    public void dodajIme(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==ime) this.Ime=ime.getText();
-
-    }
-
-    public void dodajPrezime(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==prezime) this.Prezime=prezime.getText();
-    }
-
-    public void dodajBrojIndeksa(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==brIndeksa) this.brojIndeksa=Integer.parseInt(brIndeksa.getText());
-    }
-
-    public void dodajAdresu(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==adresa) this.Adresa=adresa.getText();
-    }
-
-    public void dodajTelefon(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==telefon) this.Telefon=telefon.getText();
-    }
-
-    public void dodajJMBG(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==jmbg) this.JMBG=Integer.parseInt(jmbg.getText());
-    }
-
-    public void dodajDatumRodjenja(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==datum) this.Datum=datum.getText();
-    }
-
-    public void dodajMjestoRodjenja(ActionEvent actionEvent) {
-        if (actionEvent.getSource()==mjesto) this.Mjesto=mjesto.getText();
-    }
-
-
-    public void potvrdi (ActionEvent actionEvent)
+    public void dodajIme (KeyEvent keyEvent)
     {
-        if (actionEvent.getSource()==potvrdi)
-        {
-          new Student(Ime, Prezime, brojIndeksa, Adresa, Telefon, JMBG, Datum, Mjesto);
+        ime=(TextField) keyEvent.getTarget();
+        String name= ime.getText();
 
+        ime.getStyleClass().removeAll("validno");
+        ime.getStyleClass().removeAll("nevalidno");
+
+        if ((nameValid(name)))
+        {
+            ime.getStyleClass().add("validno");
+
+        }
+        else {
+            ime.getStyleClass().add("nevalidno");
         }
 
 
+    }
 
+
+
+
+
+    private boolean nameValid(String name) {
+
+        if (name.length()>20) return false;
+        if (name.length()==0) return false;
+        if (name.length()>0 && name.length()<20) return true;
+
+        return true;
     }
 
 
