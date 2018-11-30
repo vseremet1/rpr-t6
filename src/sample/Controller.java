@@ -104,4 +104,21 @@ public class Controller {
     }
 
 
+    public void dodajPrezime(KeyEvent keyEvent) {
+
+        ime=(TextField) keyEvent.getTarget();
+        String name= ime.getText();
+
+        ime.getStyleClass().removeAll("validno");
+        ime.getStyleClass().removeAll("nevalidno");
+
+        if ((nameValid(name)))
+        {
+            ime.getStyleClass().add("validno");
+
+        }
+        else {
+            ime.getStyleClass().add("nevalidno");
+        }
+    }
 }
