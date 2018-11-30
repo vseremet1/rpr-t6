@@ -1,0 +1,9 @@
+.validno
+{
+-fx-background-color: green;
+}
+
+.nevalidno
+{
+-fx-background-color: red;
+}
