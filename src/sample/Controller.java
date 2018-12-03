@@ -74,7 +74,6 @@ public class Controller {
             ime.getStyleClass().add("nevalidno");
         }
     }
-
     public void dodajBrIndeksa(KeyEvent keyEvent) {
 
         brIndeksa = (TextField) keyEvent.getTarget();
