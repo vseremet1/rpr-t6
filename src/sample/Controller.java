@@ -11,8 +11,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import org.w3c.dom.Text;
 
-
-
 import java.net.URL;
 import java.util.ResourceBundle;
 

@@ -56,7 +56,11 @@
     <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
     <Label text="Osnovni lični podaci" GridPane.columnIndex="1" GridPane.rowIndex="1">
         <font>
+
             <Font name="System Bold" size="14.0" />
+
+          <Font name="System Bold" size="14.0" />
+
         </font>
     </Label>
     <Label text="Ime" GridPane.columnIndex="1" GridPane.rowIndex="3" />
@@ -64,7 +68,11 @@
     <Label text="Broj Indeksa" GridPane.columnIndex="1" GridPane.rowIndex="7" />
     <Label prefHeight="21.0" prefWidth="158.0" text="Detaljni lični podaci" GridPane.columnIndex="4" GridPane.rowIndex="1">
         <font>
+
             <Font name="System Bold" size="14.0" />
+
+          <Font name="System Bold" size="14.0" />
+
         </font>
     </Label>
     <Label text="JMBG" GridPane.columnIndex="4" GridPane.rowIndex="7" />
@@ -72,17 +80,26 @@
     <Label text="Mjesto rođenja" GridPane.columnIndex="4" GridPane.rowIndex="5" />
     <Label text="Kontakt podaci" GridPane.columnIndex="1" GridPane.rowIndex="9">
         <font>
+
             <Font name="System Bold" size="14.0" />
+
+          <Font name="System Bold" size="14.0" />
+
         </font>
     </Label>
     <Label text="Podaci o studiju" GridPane.columnIndex="4" GridPane.rowIndex="9">
         <font>
+
             <Font name="System Bold" size="14.0" />
+
+          <Font name="System Bold" size="14.0" />
+
         </font>
     </Label>
     <Label text="Adresa" GridPane.columnIndex="1" GridPane.rowIndex="11" />
     <Label text="Telefon" GridPane.columnIndex="1" GridPane.rowIndex="13" />
     <Label text="E-mail" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+
     <TextField fx:id="ime" onKeyTyped="#dodajIme" GridPane.columnIndex="2" GridPane.rowIndex="3" />
     <TextField fx:id="prezime" onKeyTyped="#dodajPrezime" GridPane.columnIndex="2" GridPane.rowIndex="5" />
     <TextField fx:id="brIndeksa" onKeyTyped="#dodajBrIndeksa" GridPane.columnIndex="2" GridPane.rowIndex="7" />
@@ -98,5 +115,22 @@
     <ComboBox fx:id="status" onMouseEntered="#dodajStatus" prefWidth="150.0" promptText="Status" GridPane.columnIndex="6" GridPane.rowIndex="11" />
     <ComboBox fx:id="borci" onMouseEntered="#dodajBorci" prefWidth="150.0" promptText="Borci" GridPane.columnIndex="6" GridPane.rowIndex="13" />
     <Button fx:id="potvrdi" mnemonicParsing="false" onAction="#Potvrdi" prefHeight="31.0" prefWidth="129.0" text="Potvrdi" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+
+    <TextField fx:id="ime" onKeyTyped="#dodajIme" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <TextField fx:id="prezime" onKeyTyped="#dodajPrezime" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+    <TextField fx:id="brIndeksa" GridPane.columnIndex="2"  GridPane.rowIndex="7" />
+    <TextField fx:id="mjesto" GridPane.columnIndex="6"   GridPane.rowIndex="5" />
+    <TextField fx:id="jmbg" GridPane.columnIndex="6"  GridPane.rowIndex="7" />
+    <TextField fx:id="adresa" GridPane.columnIndex="2"  GridPane.rowIndex="11" />
+    <TextField fx:id="telefon" GridPane.columnIndex="2"  GridPane.rowIndex="13" />
+    <TextField fx:id="email" GridPane.columnIndex="2"  GridPane.rowIndex="15" />
+    <ComboBox fx:id="odsjek" prefWidth="150.0" promptText="Odsjek" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+
+    <ComboBox fx:id="godina" prefWidth="150.0" promptText="Godina" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+    <ComboBox fx:id="ciklus" prefWidth="150.0" promptText="Ciklus" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+    <ComboBox fx:id="status" prefWidth="150.0" promptText="Status" GridPane.columnIndex="6" GridPane.rowIndex="11" />
+    <ComboBox fx:id="borci" prefWidth="150.0" promptText="Borci" GridPane.columnIndex="6" GridPane.rowIndex="13" />
+    <Button fx:id="potvrdi" mnemonicParsing="false" prefHeight="31.0" prefWidth="129.0" text="Potvrdi" GridPane.columnIndex="6" GridPane.rowIndex="17" />
+
     <DatePicker fx:id="date" GridPane.columnIndex="6" GridPane.rowIndex="3" />
 </GridPane>
