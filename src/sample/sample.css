@@ -1,17 +1,16 @@
 .validno
 {
-<<<<<<< HEAD
+
 -fx-background-color: lightgreen;
-=======
--fx-background-color: green;
->>>>>>> origin/master
+
+
+
 }
 
 .nevalidno
 {
-<<<<<<< HEAD
+
 -fx-background-color: lightpink;
-=======
--fx-background-color: red;
->>>>>>> origin/master
+
+
 }
