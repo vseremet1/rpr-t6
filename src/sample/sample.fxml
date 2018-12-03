@@ -99,7 +99,6 @@
     <Label text="Adresa" GridPane.columnIndex="1" GridPane.rowIndex="11" />
     <Label text="Telefon" GridPane.columnIndex="1" GridPane.rowIndex="13" />
     <Label text="E-mail" GridPane.columnIndex="1" GridPane.rowIndex="15" />
-
     <TextField fx:id="ime" onKeyTyped="#dodajIme" GridPane.columnIndex="2" GridPane.rowIndex="3" />
     <TextField fx:id="prezime" onKeyTyped="#dodajPrezime" GridPane.columnIndex="2" GridPane.rowIndex="5" />
     <TextField fx:id="brIndeksa" onKeyTyped="#dodajBrIndeksa" GridPane.columnIndex="2" GridPane.rowIndex="7" />
